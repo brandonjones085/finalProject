@@ -36,10 +36,13 @@
     <ClInclude Include="Garage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Kitched.h">
+    <ClInclude Include="Bathroom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Bathroom.h">
+    <ClInclude Include="Kitchen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -72,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Bathroom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
