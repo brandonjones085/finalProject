@@ -1,0 +1,19 @@
+﻿  pch.cpp
+  Bathroom.cpp
+  Bedroom.cpp
+  Game.cpp
+  Garage.cpp
+  Kitchen.cpp
+c:\users\brand\desktop\files\osu\cs162\finalproject\main\main\kitchen.cpp(5): error C2653: 'Kitched': is not a class or namespace name
+c:\users\brand\desktop\files\osu\cs162\finalproject\main\main\kitchen.cpp(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\brand\desktop\files\osu\cs162\finalproject\main\main\kitchen.cpp(7): warning C4508: 'Kitched': function should return a value; 'void' return type assumed
+c:\users\brand\desktop\files\osu\cs162\finalproject\main\main\kitchen.cpp(10): error C2523: 'Kitched::~Kitched': destructor tag mismatch
+c:\users\brand\desktop\files\osu\cs162\finalproject\main\main\kitchen.cpp(10): error C2510: 'Kitched': left of '::' must be a class/struct/union
+c:\users\brand\desktop\files\osu\cs162\finalproject\main\main\kitchen.cpp(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\brand\desktop\files\osu\cs162\finalproject\main\main\kitchen.cpp(11): error C2084: function 'int Kitched(void)' already has a body
+  c:\users\brand\desktop\files\osu\cs162\finalproject\main\main\kitchen.cpp(5): note: see previous definition of 'Kitched'
+  main.cpp
+  menu.cpp
+  Space.cpp
+  validateMenu.cpp
+  Generating Code...

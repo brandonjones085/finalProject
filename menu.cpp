@@ -1,3 +1,11 @@
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The menu function asks for user input and returns an int
+** based on the users decision. 
+*******************************************************************************/
+
+
 #include "menu.h"
 #include "validateMenu.h"
 

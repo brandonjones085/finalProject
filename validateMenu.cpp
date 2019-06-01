@@ -1,3 +1,13 @@
+
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The validateMenu function takes in a reference to an int and validates that it
+** is an int and between 1 and 2.
+*******************************************************************************/
+
+
+
 #include "validateMenu.h"
 #include <iostream>
 
