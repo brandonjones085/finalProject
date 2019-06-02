@@ -7,7 +7,7 @@
 
 Bedroom::Bedroom()
 {
-	roomNum = 3;
+	roomNum = 16;
 }
 
 

@@ -19,9 +19,10 @@ class Game
 {
 private:
 	int rounds = 1; 
-	Player *player; 
+	Player player; 
 	Space *currentRoom; 
 	int broccoliRoom; 
+	bool game; 
 
 public:
 	Game();
@@ -37,6 +38,7 @@ public:
 	void broccoli(); 
 	void setBroccoliRoom(int); 
 	int getBroccoliRoom(); 
+	void somethingBad(); 
 	Space *getCurrentRoom(); 
 	void setCurrentRoom(Space *r); 
 

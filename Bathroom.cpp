@@ -6,7 +6,7 @@
 
 Bathroom::Bathroom()
 {
-	roomNum = 2; 
+	roomNum = 15; 
 
 }
 
