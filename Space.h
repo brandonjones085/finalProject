@@ -14,6 +14,7 @@ protected:
 	Space *left;
 	Space *bottom;
 	std::string name = "Space";
+	int roomNum; 
 
 
 
@@ -23,6 +24,7 @@ public:
 	virtual Space *move(); 
 	virtual void welcome(); 
 	virtual std::string getName();
+	virtual int getRoomNum(); 
 	
 	virtual void *getCurrentRoom();
 

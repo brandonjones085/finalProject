@@ -4,9 +4,7 @@
 
 Player::Player()
 {
-
 	this->health = 5; 
-
 }
 
 

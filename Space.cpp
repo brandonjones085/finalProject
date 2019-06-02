@@ -22,6 +22,11 @@ std::string Space::getName()
 }
 
 
+int Space::getRoomNum()
+{
+	return roomNum; 
+}
+
 void *Space::getCurrentRoom()
 {
 	return currentSpace; 

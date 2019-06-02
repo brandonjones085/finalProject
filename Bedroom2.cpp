@@ -6,7 +6,7 @@
 
 Bedroom2::Bedroom2()
 {
-
+	roomNum = 6;
 
 }
 

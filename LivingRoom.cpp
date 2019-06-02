@@ -8,7 +8,7 @@
 
 LivingRoom::LivingRoom()
 {
-
+	roomNum = 5;
 }
 
 

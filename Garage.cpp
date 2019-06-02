@@ -11,7 +11,7 @@
 Garage::Garage()
 {
 	
-
+	roomNum = 1;
 }
 
 

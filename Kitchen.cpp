@@ -13,7 +13,7 @@
 Kitchen::Kitchen()
 {
 	
-	
+	roomNum = 4;
 	
 
 }

@@ -9,42 +9,49 @@
 
 Game::Game()
 {
-	//initializes the new objects
-	/*
-	Space *s1 = new Garage();
-	Space *s2 = new Bathroom(); 
 
 
-	int col = 3;
-	int row = 2;
+}
 
-	rooms = new Space*[col];
-	for (int i = 0; i < col; i++)
-	{
-		rooms[i] = new Space[row]; 
-	}
-	
-	rooms[0][0] = *s1; 
-	rooms[0][1] = *s2; 
-
-	*/
-
-	Space s; 
-
+int Game::getBroccoliRoom()
+{
+	return broccoliRoom; 
 }
 
 void Game::run()
 {
-
+	Player p; 
 	bool game = true; 
 	gameIntro(); 
 	setStartRoom();
 	while (game)
 	{
 		gameMenu(); 
+		if (rounds % 6 == 1)
+		{
+			broccoli(); 
+
+		}
+		
+		if (getCurrentRoom()->getRoomNum() == getBroccoliRoom())
+		{
+			std::cout << "\n\nYOU FOUND THE BROCCOLI"; 
+			int h = p.getHealth(); 
+			h += 10; 
+			p.setHealth(h); 
+
+		}
+
+
 	}
 }
 
+
+
+void Game::setBroccoliRoom(int i)
+{
+	this->broccoliRoom = i; 
+}
 
 void Game::gameIntro()
 {
@@ -116,6 +123,63 @@ void Game::setRounds(int &i)
 void Game::setCurrentRoom(Space *r)
 {
 	this->currentRoom = r; 
+
+}
+
+
+
+
+
+
+
+void Game::broccoli()
+{
+	 
+	int num = std::rand() % 7 + 1;
+
+	if (num == 1)
+	{
+		//garage
+		std::cout << "\n\n-----------------The broccoli is in the garage\n\n\n\n--------------------";
+		setBroccoliRoom(1); 
+	}
+	else if (num == 2)
+	{
+		//bathroom1
+		std::cout << "\n\n-----------------The broccoli is in bathroom 1\n\n\n\n--------------------";
+		setBroccoliRoom(2);
+	}
+	else if (num == 3)
+	{
+		//bedroom1
+		std::cout << "\n\n-----------------The broccoli is in bedroom 1\n\n\n\n--------------------";
+		setBroccoliRoom(3);
+	}
+	else if (num == 4)
+	{
+		//kitchen
+		std::cout << "\n\n-----------------The broccoli is in the kitchen\n\n\n\n--------------------";
+		setBroccoliRoom(4);
+	}
+	else if (num == 5)
+	{
+		//living room
+		std::cout << "\n\n-----------------The broccoli is in the living room\n\n\n\n--------------------";
+		setBroccoliRoom(5);
+	}
+	else if (num == 6)
+	{
+		//bedroom2
+		std::cout << "\n\n-----------------The broccoli is in bedroom 2\n\n\n\n--------------------";
+		setBroccoliRoom(6);
+	}
+	else if (num == 7)
+	{
+		//bathroom2
+		std::cout << "\n\n-----------------The broccoli is in bathroom 2\n\n\n\n--------------------";
+		setBroccoliRoom(7);
+	}
+
 
 }
 

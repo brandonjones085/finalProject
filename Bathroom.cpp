@@ -6,7 +6,7 @@
 
 Bathroom::Bathroom()
 {
-
+	roomNum = 2; 
 
 }
 
@@ -61,12 +61,7 @@ Space *Bathroom::move()
 		currentSpace = right; 
 		
 	}
-
-
-
 	return currentSpace; 
-
-
 }
 
 
