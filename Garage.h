@@ -1,9 +1,23 @@
 #ifndef GARAGE_HPP
 #define GARAGE_HPP
-class Garage
+
+
+#include "Space.h"
+
+
+
+class Garage : public Space
 {
+
 public:
 	Garage();
+
+
+	virtual Space *move(); 
+
+
+
+
 	~Garage();
 };
 

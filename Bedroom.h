@@ -1,9 +1,16 @@
 #ifndef BEDROOM_HPP
 #define BEDROOM_HPP
-class Bedroom
+
+#include "Space.h"
+#include "Bathroom.h"
+#include "Kitchen.h"
+
+class Bedroom : public Space
 {
 public:
 	Bedroom();
+	virtual Space *move();
+	
 	~Bedroom();
 };
 

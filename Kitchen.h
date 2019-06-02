@@ -1,6 +1,10 @@
 #ifndef KITCHEN_HPP
 #define KITCHEN_HPP
-class Kitchen
+
+#include "Space.h"
+
+
+class Kitchen : public Space
 {
 public:
 	Kitchen();

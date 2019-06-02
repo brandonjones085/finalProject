@@ -152,10 +152,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Bathroom.h" />
+    <ClInclude Include="Bathroom2.h" />
     <ClInclude Include="Bedroom.h" />
+    <ClInclude Include="Bedroom2.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Garage.h" />
     <ClInclude Include="Kitchen.h" />
+    <ClInclude Include="LivingRoom.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Player.h" />
@@ -164,10 +167,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bathroom.cpp" />
+    <ClCompile Include="Bathroom2.cpp" />
     <ClCompile Include="Bedroom.cpp" />
+    <ClCompile Include="Bedroom2.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Garage.cpp" />
     <ClCompile Include="Kitchen.cpp" />
+    <ClCompile Include="LivingRoom.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="pch.cpp">

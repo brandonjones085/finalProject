@@ -4,10 +4,33 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
+#include <string>
 
 
 Game::Game()
 {
+	//initializes the new objects
+	/*
+	Space *s1 = new Garage();
+	Space *s2 = new Bathroom(); 
+
+
+	int col = 3;
+	int row = 2;
+
+	rooms = new Space*[col];
+	for (int i = 0; i < col; i++)
+	{
+		rooms[i] = new Space[row]; 
+	}
+	
+	rooms[0][0] = *s1; 
+	rooms[0][1] = *s2; 
+
+	*/
+
+	Space s; 
+
 }
 
 void Game::run()
@@ -15,7 +38,7 @@ void Game::run()
 
 	bool game = true; 
 	gameIntro(); 
-
+	setStartRoom();
 	while (game)
 	{
 		gameMenu(); 
@@ -49,11 +72,13 @@ void Game::gameIntro()
 
 void Game::gameMenu()
 {
-	setStartRoom(); 
+
+	std::cout << "You are in the "<< currentRoom->getName(); 
 	int num; 
 	std::cout << "what would you like to do next?\n";
 	std::cout << "1. Show map\n"; 
 	std::cout << "2. Change room\n"; 
+
 	std::cin >> num; 
 	//validateNum(num); 
 
@@ -82,14 +107,29 @@ void Game::setRounds(int &i)
 }
 
 
+ Space *Game::getCurrentRoom()
+{
+	 return currentRoom; 
+}
+
+
+void Game::setCurrentRoom(Space *r)
+{
+	this->currentRoom = r; 
+
+}
+
 
 void Game::runRound()
 {
+	Space *s = getCurrentRoom(); 
+	
 	int r = getRounds(); 
+
 	std::cout << "Rounds #" << r << std::endl;
-
-
-
+	
+	  
+	setCurrentRoom(s->move());
 
 	r += 1; 
 	setRounds(r); 
@@ -101,63 +141,70 @@ void Game::runRound()
 
 void Game::showMap()
 {
-	std::cout << "_______________________________________________________\n"; 
-	std::cout << "|               |                     |               |\n";
-	std::cout << "|  Bedroom 1    |     Kitchen         | Bathroom 2    |\n";
-	std::cout << "|               |                     |               |\n";
-	std::cout << "|_______________|_____________________|_______________|\n";
-	std::cout << "|               |                     |               |\n";
-	std::cout << "|  Bathroom 1   |     Living Room     | Bedroom 2     |\n";
-	std::cout << "|               |                     |               |\n";
-	std::cout << "|_______________|_____________________|_______________|\n";
+	std::cout << "__________________________________________________________\n"; 
+	std::cout << "|               |                     |                   |\n";
+	std::cout << "|  Bedroom 1    |     Kitchen         |     Bathroom 2    |\n";
+	std::cout << "|               |                     |                   |\n";
+	std::cout << "|_______________|_____________________|___________________|\n";
+	std::cout << "|               |                     |                   |\n";
+	std::cout << "|  Bathroom 1   |     Living Room     |     Bedroom 2     |\n";
+	std::cout << "|               |                     |                   |\n";
+	std::cout << "|_______________|_____________________|___________________|\n";
 	std::cout << "|               |\n";
-	std::cout << "|  Garage       |\n";
+	std::cout << "|   Garage      |\n";
 	std::cout << "|_______________|\n";
-
 }
 
 
 
 void Game::setStartRoom()
 {
-	int num = std::rand() % 7 + 1; 
+	int num = 1; 
+	//int num = std::rand() % 7 + 1; 
 
 	if (num == 1)
 	{
 		//garage
 		std::cout << "\n\n\n\nYou are starting in the Garage!\n";
-
+		setCurrentRoom(new Garage()); 
+		
 	}
 	else if (num == 2)
 	{
 		//kitchen
 		std::cout << "\n\n\n\nYou are starting in the Kitchen!\n";
+		//currentRoom = Kitchen();
 	}
 	else if (num == 3)
 	{
 		//bathroom 1
 		std::cout << "\n\n\n\nYou are starting in the Bathroom 1!\n";
+		//currentRoom = Bathroom();
 	}
 	else if (num == 4)
 	{
 		//bathroom 2
 		std::cout << "\n\n\n\nYou are starting in the Bathroom 2!\n";
+		//currentRoom = Bathroom2();
 	}
 	else if (num == 5)
 	{
 		//bedroom 1
 		std::cout << "\n\n\n\nYou are starting in Bedroom 1!\n";
+		//currentRoom =Bedroom();
 	}
 
 	else if (num == 6)
 	{
 		//bedroom 2
 		std::cout << "\n\n\n\nYou are starting in Bedroom 2!\n";
+		//currentRoom = Bedroom2(); 
 	}
 	else
 	{
 		//living room; 
 		std::cout << "\n\n\n\nYou are starting in the Living Room!\n";
+		//currentRoom = LivingRoom();
 	}
 
 }
