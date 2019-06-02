@@ -13,7 +13,7 @@ protected:
 	Space *right;
 	Space *left;
 	Space *bottom;
-	std::string name;
+	std::string name = "Space";
 
 
 

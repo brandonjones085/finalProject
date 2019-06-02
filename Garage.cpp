@@ -10,11 +10,14 @@
 
 Garage::Garage()
 {
-	top = new Bathroom(); 
-	bottom = nullptr;
-	left = nullptr; 
-	right = nullptr; 
+	
 
+}
+
+
+std::string Garage::getName()
+{
+	return name;
 }
 
 
@@ -44,6 +47,8 @@ Space *Garage::move()
 
 	if (num == 1)
 	{
+
+		top = new Bathroom();
 		currentSpace = top; 
 
 		

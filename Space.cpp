@@ -5,7 +5,10 @@
 
 Space::Space()
 {
-	
+	bottom = nullptr;
+	top = nullptr;
+	right = nullptr;
+	top = nullptr;
 
 }
 

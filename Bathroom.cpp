@@ -6,10 +6,15 @@
 
 Bathroom::Bathroom()
 {
-	this->left = nullptr; 
+
 
 }
 
+
+std::string Bathroom::getName()
+{
+	return name; 
+}
 
 
 
@@ -25,7 +30,7 @@ Space *Bathroom::move()
 	std::cout << "4. Right\n";
 	std::cin >> num;
 
-	while (num != 1 || num != 2 || num != 4)
+	while (num != 1 && num != 2 && num != 4)
 	{
 		std::cout << "\nYou cannot go that way!\n"; 
 		std::cout << "Please try again: "; 
@@ -33,7 +38,7 @@ Space *Bathroom::move()
 		std::cin.clear();
 		std::cin.ignore();
 		std::cin.sync();
-		move();
+	
 
 	}
 
@@ -46,13 +51,13 @@ Space *Bathroom::move()
 	}
 	else if(num == 2)
 	{
-		bottom = new Garage(); 
+		bottom = new Garage();
 		currentSpace = bottom; 
 		
 	}
 	else if (num == 4)
 	{
-		right = new LivingRoom();
+		right = new LivingRoom(); 
 		currentSpace = right; 
 		
 	}

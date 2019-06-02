@@ -73,7 +73,7 @@ void Game::gameIntro()
 void Game::gameMenu()
 {
 
-	std::cout << "You are in the "<< currentRoom->getName(); 
+	std::cout << "You are in the " << currentRoom->getName() << std::endl;
 	int num; 
 	std::cout << "what would you like to do next?\n";
 	std::cout << "1. Show map\n"; 
@@ -123,13 +123,16 @@ void Game::setCurrentRoom(Space *r)
 void Game::runRound()
 {
 	Space *s = getCurrentRoom(); 
+	Player p; 
 	
 	int r = getRounds(); 
 
 	std::cout << "Rounds #" << r << std::endl;
-	
+	std::cout << "Players health: " << p.getHealth() << std::endl; 
 	  
 	setCurrentRoom(s->move());
+
+	std::cout << "\n\n\nYou are moving into the " << getCurrentRoom()->getName() << std::endl; 
 
 	r += 1; 
 	setRounds(r); 

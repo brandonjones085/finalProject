@@ -1,14 +1,20 @@
 #include "Bedroom.h"
-
-
+#include "Bathroom.h"
+#include "Kitchen.h"
 
 #include <iostream>
 
 
 Bedroom::Bedroom()
 {
-	this->top = nullptr; 
-	this->left = nullptr; 
+
+}
+
+
+
+std::string Bedroom::getName()
+{
+	return name;
 }
 
 
@@ -24,7 +30,7 @@ Space *Bedroom::move()
 	std::cout << "4. Right\n";
 	std::cin >> num;
 
-	while ( num != 2 || num != 4)
+	while ( num != 2 && num != 4)
 	{
 		std::cout << "\nYou cannot go that way!\n";
 		std::cout << "Please try again: ";
@@ -38,10 +44,8 @@ Space *Bedroom::move()
 
 	if (num == 4)
 	{
-		
-			top = new Kitchen();
-		
-
+		right = new Kitchen();
+		currentSpace = right; 
 	}
 	else if (num == 2)
 	{

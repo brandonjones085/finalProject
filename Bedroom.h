@@ -2,14 +2,20 @@
 #define BEDROOM_HPP
 
 #include "Space.h"
-#include "Bathroom.h"
-#include "Kitchen.h"
+
+
+
+#include <string>
 
 class Bedroom : public Space
 {
+private: 
+	std::string name = "Bedroom 1";
+
 public:
 	Bedroom();
 	virtual Space *move();
+	virtual std::string getName();
 	
 	~Bedroom();
 };
