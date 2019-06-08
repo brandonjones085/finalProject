@@ -1,2 +1,9 @@
 *.o
+pch.h
+pch.cpp
+main.vcxproj
+main.vcxproj.filters
+main.vcxproj.user
+Debug/
+
 

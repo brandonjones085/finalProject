@@ -1,3 +1,10 @@
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The Bedroom class inherits from the Space class
+*******************************************************************************/
+
+
 #include "Bedroom.h"
 #include "Bathroom.h"
 #include "Kitchen.h"
@@ -17,7 +24,11 @@ std::string Bedroom::getName()
 	return name;
 }
 
-
+/*******************************************************************************
+** Description:  Moves the character based on the user input received.
+** validates the user input and
+** points to the surounding available options.
+*******************************************************************************/
 Space *Bedroom::move()
 {
 

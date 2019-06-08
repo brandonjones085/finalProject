@@ -1,3 +1,11 @@
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The header file for the bedroom 2 class
+*******************************************************************************/
+
+
+
 #ifndef BEDROOM2_HPP
 #define BEDROOM2_HPP
 

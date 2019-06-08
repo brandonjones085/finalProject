@@ -1,3 +1,10 @@
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The header file for the Living room class
+*******************************************************************************/
+
+
 
 #ifndef LIVINGROOM_HPP
 #define LIVINGROOM_HPP

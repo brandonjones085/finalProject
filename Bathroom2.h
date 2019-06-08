@@ -5,6 +5,12 @@
 
 #include <string>
 
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The header file for the Bathroom2 class
+*******************************************************************************/
+
 
 #include "Space.h"
 

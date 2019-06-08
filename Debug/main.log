@@ -1,2 +1,13 @@
-﻿  Game.cpp
+﻿  Bathroom.cpp
+  Bathroom2.cpp
+  Bedroom.cpp
+  Bedroom2.cpp
+  Game.cpp
+  Garage.cpp
+  Kitchen.cpp
+  LivingRoom.cpp
+  Player.cpp
+  Space.cpp
+  main.cpp
+  Generating Code...
   main.vcxproj -> C:\Users\brand\Desktop\files\OSU\cs162\finalProject\main\Debug\main.exe

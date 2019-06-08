@@ -1,5 +1,9 @@
 
-
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The Kitchen class inherits from the Space class
+*******************************************************************************/
 
 #include "Kitchen.h"
 #include "LivingRoom.h"
@@ -23,7 +27,11 @@ std::string Kitchen::getName()
 	return name;
 }
 
-
+/*******************************************************************************
+** Description:  Moves the character based on the user input received.
+** validates the user input and
+** points to the surounding available options.
+*******************************************************************************/
 Space *Kitchen::move()
 {
 

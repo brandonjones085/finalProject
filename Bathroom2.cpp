@@ -1,3 +1,10 @@
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The Bathroom2 class inherits from the Space class
+*******************************************************************************/
+
+
 #include "Bathroom2.h"
 #include "Kitchen.h"
 #include "Bedroom2.h"
@@ -15,6 +22,12 @@ std::string Bathroom2::getName()
 	return name;
 }
 
+
+/*******************************************************************************
+** Description:  Moves the character based on the user input received.
+** validates the user input and
+** points to the surounding available options.
+*******************************************************************************/
 
 Space *Bathroom2::move()
 {

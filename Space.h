@@ -1,3 +1,10 @@
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The header file for the Space class
+*******************************************************************************/
+
+
 
 #ifndef SPACE_HPP
 #define SPACE_HPP

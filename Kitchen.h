@@ -1,3 +1,10 @@
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The header file for the Kitchen class
+*******************************************************************************/
+
+
 #ifndef KITCHEN_HPP
 #define KITCHEN_HPP
 

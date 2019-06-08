@@ -1,3 +1,11 @@
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The header file for the Garage class
+*******************************************************************************/
+
+
+
 #ifndef GARAGE_HPP
 #define GARAGE_HPP
 

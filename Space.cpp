@@ -1,3 +1,10 @@
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The Space class is the base class for several inheriting classes
+*******************************************************************************/
+
+
 #include "Space.h"
 
 #include <iostream>

@@ -1,3 +1,10 @@
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The LivingRoom class inherits from the Space class
+*******************************************************************************/
+
+
 #include "LivingRoom.h"
 #include "Kitchen.h"
 #include "Bedroom2.h"
@@ -17,12 +24,16 @@ std::string LivingRoom::getName()
 	return name;
 }
 
-
+/*******************************************************************************
+** Description:  Moves the character based on the user input received.
+** validates the user input and
+** points to the surounding available options.
+*******************************************************************************/
 Space *LivingRoom::move()
 {
 
 	int num;
-	std::cout << "You are in the Garage...\n";
+	std::cout << "\nYou are in the Living Room" << std::endl; 
 	std::cout << "Which direction would you like to move?\n";
 	std::cout << "1. Up\n";
 	std::cout << "2. Down\n";

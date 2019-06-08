@@ -1,23 +1,33 @@
+/*******************************************************************************
+** Author:       Brandon Jones
+** Date:         06/01/2019
+** Description:  The Bathroom class inherits from the Space class
+*******************************************************************************/
+
+
 #include "Bathroom.h"
-
-
 
 #include <iostream>
 
+//CONSTRUCTOR
 Bathroom::Bathroom()
 {
 	roomNum = 15; 
 
 }
 
-
+//inherits from space//returns a name
 std::string Bathroom::getName()
 {
 	return name; 
 }
 
 
-
+/*******************************************************************************
+** Description:  Moves the character based on the user input received. 
+** validates the user input and
+** points to the surounding available options. 
+*******************************************************************************/
 Space *Bathroom::move()
 {
 
@@ -30,6 +40,8 @@ Space *Bathroom::move()
 	std::cout << "4. Right\n";
 	std::cin >> num;
 
+
+	//validation 
 	while (num != 1 && num != 2 && num != 4)
 	{
 		std::cout << "\nYou cannot go that way!\n"; 
@@ -39,9 +51,9 @@ Space *Bathroom::move()
 		std::cin.ignore();
 		std::cin.sync();
 	
-
 	}
 
+	// move to Bedroom
 	if (num == 1)
 	{
 		
@@ -49,12 +61,14 @@ Space *Bathroom::move()
 		currentSpace = top; 
 	
 	}
+	//move to garage
 	else if(num == 2)
 	{
 		bottom = new Garage();
 		currentSpace = bottom; 
 		
 	}
+	//move to living room
 	else if (num == 4)
 	{
 		right = new LivingRoom(); 
